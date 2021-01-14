@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dialog_background_round"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이름입력 : "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dialog_et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#defcdb"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나이입력 : "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dialog_et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dcf7da"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/dialog_tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="성별입력 : " />
+
+    <RadioGroup
+        android:id="@+id/dialog_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/dialog_rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="남자" />
+
+        <RadioButton
+            android:id="@+id/dialog_rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="여자" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/dialog_tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="키입력 : "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dialog_et3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dcf7da"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/dialog_tv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="몸무게입력 : "
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/dialog_et4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dcf7da"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="확인" />
+
+        <Button
+            android:id="@+id/dialog_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="취소" />
+    </LinearLayout>
+
+
+</LinearLayout>

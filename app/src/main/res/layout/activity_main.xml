@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="51dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="387dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_layout1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView_profile"
+                    android:layout_width="52dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/profile" />
+
+                <TextView
+                    android:id="@+id/textView_name"
+                    android:layout_width="144dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="이름 :  OOO"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/remake_button"
+                    android:layout_width="74dp"
+                    android:layout_height="101dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/remake"
+                    android:scaleX="0.85"
+                    android:scaleY="0.85" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:text="Switch" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/home_barChart"
+                android:layout_width="320dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center">
+            </com.github.mikephil.charting.charts.BarChart>
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/lineChart"
+                android:layout_width="320dp"
+                android:layout_height="240dp"
+                android:layout_gravity="center"
+            />
+
+            <Button
+                android:id="@+id/btnConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/layout2"
+                android:text="Connect" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="29dp" />
+
+            <Button
+                android:id="@+id/button_check"
+                android:layout_width="282dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:background="@drawable/layout2"
+                android:text="상태 확인하기"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/button_location"
+                android:layout_width="282dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:background="@drawable/layout2"
+                android:text="현재 위치 알려주기"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/button_emergency"
+                android:layout_width="282dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:background="@drawable/layout2"
+                android:text="긴급 상황 통화"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
